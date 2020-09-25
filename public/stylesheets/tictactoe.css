@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2|Righteous&display=swap");
+.brand {
+  font-family: 'Righteous';
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+  transition: transform 0.5s;
+  z-index: 10;
+  cursor: default; }
+  .brand a {
+    text-decoration: none; }
+    .brand a:hover {
+      color: white;
+      text-decoration: none; }
+    .brand a:visited {
+      color: white; }
+    .brand a:-webkit-any-link {
+      color: white; }
+
+.made-with {
+  font-family: Righteous;
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: white; }
+  .made-with ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    font-size: 2em; }
+    .made-with ul li {
+      padding: 2px; }
+
+.body-tictactoe {
+  background: linear-gradient(225deg, #001424 0%, #403d3d 0%, #2d3030 9%, #101011 100%);
+  height: 100vh; }
+
+.weapon {
+  font-family: "Press Start 2P";
+  font-size: 0.79rem;
+  color: white; }
+
+.cell {
+  border: 5px solid white;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  color: white;
+  font-family: "Press Start 2P";
+  font-size: 60px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0; }
+
+.cell:hover {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.table-tictactoe {
+  border-collapse: collapse;
+  position: absolute;
+  left: 50%;
+  margin-left: -154px;
+  top: 250px;
+  background-position: -100px -98px; }
+
+.table-tictactoe tr:first-child .cell {
+  border-top: 0; }
+
+.table-tictactoe tr:last-child .cell {
+  border-bottom: 0; }
+
+.table-tictactoe tr .cell:first-child {
+  border-left: 0; }
+
+.table-tictactoe tr .cell:last-child {
+  border-right: 0; }
+
+.endgame {
+  display: none;
+  width: 400px;
+  top: 300px;
+  background-color: rgba(150, 150, 150, 0.89);
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+  font-family: "Press Start 2P";
+  text-shadow: 1px 1px 1px black; }
+
+.button-replay {
+  display: none;
+  font-family: "Press Start 2P";
+  position: absolute;
+  margin-top: 10px;
+  width: 70px;
+  height: 25px;
+  left: 50%;
+  margin-left: -35px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px;
+  font-size: 0.55rem;
+  cursor: pointer;
+  font-stretch: condensed;
+  margin-bottom: 10px; }
+
+.button-replay:active {
+  position: absolute;
+  margin-top: 10px;
+  width: 70px;
+  left: 50%;
+  margin-left: -35px;
+  border-radius: 2px;
+  color: transparent;
+  text-shadow: 1.3px 1.3px 0px black; }
+
+::selection {
+  background-color: transparent;
+  color: darkorange; }
+
+.cell::selection {
+  background-color: transparent;
+  color: black; }
+
+.header-tictactoe {
+  margin-top: 40px;
+  height: 75px;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 15px;
+  font-size: 70px;
+  font-family: "Vibur", cursive;
+  text-align: center;
+  text-shadow: 1px 2px 6px black;
+  cursor: default; }
+
+.header-tictactoe:hover {
+  text-shadow: 1px 2px 4px black; }
+
+.footer-tictactoe {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  margin-top: -40px;
+  border: none;
+  line-height: 35px;
+  left: 0;
+  text-align: center;
+  padding-top: 15px;
+  vertical-align: center;
+  font-family: "Vibur";
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  width: 100%;
+  transition: box-shadow 2s, text-shadow 2s, color 4.5s;
+  text-shadow: 2px 2px 8px black; }
+
+.footer-tictactoe:hover {
+  box-shadow: 0pc -2px 20px white;
+  text-shadow: -1px -1px 7px white;
+  color: black; }
+
+.XorO {
+  text-align: center;
+  font-size: 1rem;
+  padding: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  color: white;
+  font-family: "Press Start 2P"; }
+
+.XorO input {
+  font-family: cursive;
+  cursor: pointer;
+  margin: 4px; }
+
+.userO, .userX {
+  cursor: pointer;
+  color: white;
+  font-family: "Press Start 2P"; }
+
+input {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.myRadio {
+  position: relative; }
+
+.o {
+  right: 70px; }
+
+.x {
+  left: 30px; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  height: 25px;
+  width: 25px;
+  background-color: transparent; }
+
+/* On mouse-over, add a grey background color */
+.myRadio:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+/* When the checkbox is checked, add a blue background */
+.myRadio input:checked ~ .checkmark {
+  background-color: transparent; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.myRadio input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.myRadio .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }

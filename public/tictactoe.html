@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Homemade+Apple|Itim|Patrick+Hand|Reenie+Beanie|Baloo+Bhaina|Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+    <link rel="stylesheet" href="./stylesheets/tictactoe.css">
+  <meta charset="UTF-8">
+  <title>TicTacToe | markhalstead.dev</title>
+</head>
+
+<body class="body-tictactoe">
+  <div class="brand"><a href='/'>markhalstead.dev</a></div>
+
+  <div class="tictactoe-container">
+
+
+  <header class="header-tictactoe">tic tac toe</header>
+  <form class="XorO">
+    <label class='myRadio o'> <span>O</span>
+      <input class="userO" id="userX" type="radio" name="xoro" value="O" ><span class="checkmark" ></span>
+    </label>
+    <label class='myRadio x'> <span>X</span>
+      <input class="userX" id="userO" type="radio" name="xoro" value="X"   ><span class="checkmark"></span>
+    </label>
+    </form>
+  <table class="table-tictactoe">
+    <tr>
+      <td class="cell" id="0"> </td>
+      <td class="cell" id="1"> </td>
+      <td class="cell" id="2"> </td>
+    </tr>
+    <tr>
+      <td class="cell" id="3"> </td>
+      <td class="cell" id="4"> </td>
+      <td class="cell" id="5"> </td>
+    </tr>
+    <tr>
+      <td class="cell" id="6"> </td>
+      <td class="cell" id="7"> </td>
+      <td class="cell" id="8"> </td>
+    </tr>
+  </table>
+
+  <div class="endgame">
+    <div class="text"></div>  </div>
+  <button class="button-replay" id="replay" onclick="startGame()">Replay</button>
+
+
+  <div class="made-with">
+    <h1>Made With:</h1>
+    <ul>
+
+      <li><i class="fa fab fa-html5" title="HTML5"></i></li>
+      <li><i class="fa fab fa-css3" title="CSS3"></i></li>
+      <li><i class="icon-javascript" title="Javascript ES6"></i></li>
+      <li><i class="icon-jquery" title="jQuery"></i></li>
+      <li><i class="fa fa-coffee" title="Coffee"></i></li>
+      <li><i class="fa fab fa-heart" title="Love"></i></li>
+    </ul>
+  </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+<script charset="utf-8" src="/tictactoe.js">
+
+</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js" charset="utf-8"></script> -->
+</body>
+</html>
